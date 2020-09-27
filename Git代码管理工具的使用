@@ -1,0 +1,36 @@
+git的使用
+1. 创建分支
+	git branch branchName  //创建一个分支
+2. 让git列出所有已存在的分支
+	git branch
+	备注:前面带"*"符号的分支表示当前所在的分支
+3.切换工作区到目标分支
+	git checkout branchName
+4. 添加新文件
+	git add fileName
+5. 添加提交说明
+	git commit -m "描述性说明"
+6. 推送到gitlab服务器源代码仓库
+	git push origin branchName
+	备注:指明推送到的分支
+7. 将服务器源代码仓库下载到本地
+	git clone git@IP:zlg/src.git
+	备注:IP为源代码服务器IP地址
+8. 强制push到当前分支对应的远程仓库
+	git push -f
+9. 丢弃工作区的改动
+	git checkout --<文件>... 
+10. 查看工作区的改动文件状态
+	git status
+11. 添加指定修改文件到本地git仓库
+	git add fileName
+	git commit -m "描述性说明" //添加本次提交说明
+12. 查看历史提交涉及的文件,显示最近n条的修改，及涉及到的文件
+	git log --stat -n	
+	
+13. 查看提交文件的相关修改
+	git log -p fileName
+
+
+
+
