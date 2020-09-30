@@ -1,1 +1,38 @@
 sqlite3数据库的操作
+
+1. 打开本地sqlite数据库
+	$sqlite3 test.db
+
+2. 显示当前打开的数据库文的位置
+	sqlite> .database
+
+3.查看所有的命令介绍
+	sqlite> .help
+
+4. 退出当前数据库系统
+	sqlite> .quit
+
+5. 显示数据库中所有的表名
+	sqlite> .tables
+
+6. 查看表中表头的信息
+	sqlite> .schema tableName
+
+7. 显示表头
+	sqlite> .header on
+
+8. 显示调整成列模式
+	sqlite> .mode column
+
+9. 对表进行重命名
+	sqlite> ALTER TABLE old_tableName TO new_tableName;
+
+10. 在已有表中添加一个新的列
+	sqlite> ALTER TABLE tableName ADD COLUMN columnName TEXT
+	备注: 1. tableName:数据表的名称， columnName:新加列的名称
+		TEXT：新加列的数据类型(此处以TEXT类型为例)
+	     2. 新添加的列是以NULL值来填充的。
+
+
+
+
