@@ -32,6 +32,12 @@ sqlite3数据库的操作
 	备注: 1. tableName:数据表的名称， columnName:新加列的名称
 		TEXT：新加列的数据类型(此处以TEXT类型为例)
 	     2. 新添加的列是以NULL值来填充的。
+	
+11. 更新表中指定项的值
+	sqlite>UPDATE table_name SET column1 = value1, column2 = value2...., columnN = valueN WHERE [condition];
+	示例:
+	sqlite> UPDATE COMPANY SET ADDRESS = 'Texas' WHERE ID = 6;
+	
 
 
 

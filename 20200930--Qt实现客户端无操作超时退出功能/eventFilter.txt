@@ -1,0 +1,6 @@
+QObject有一个eventFilter()函数，用于建立事件过滤器。这个函数的签名如下:
+virtual bool QObject::eventFilter ( QObject * watched, QEvent * event );
+
+
+
+
